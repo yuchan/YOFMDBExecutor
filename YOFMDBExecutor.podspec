@@ -10,20 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "YOFMDBExecutor"
   s.version          = "0.1.0"
-  s.summary          = "A short description of YOFMDBExecutor."
+  s.summary          = "Deadly Simple FMDB Executor."
   s.description      = <<-DESC
-                       An optional longer description of YOFMDBExecutor
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Deadly Simple FMDB Executor.
+                       No clutter open & close methods.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/YOFMDBExecutor"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/yuchan/YOFMDBExecutor"
   s.license          = 'MIT'
   s.author           = { "yuchan" => "yusuke@junkpiano.me" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/YOFMDBExecutor.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => "https://github.com/yuchan/YOFMDBExecutor.git", :tag => s.version.to_s }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
@@ -31,8 +26,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'YOFMDBExecutor' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'FMDB', '~> 2.4'
 end

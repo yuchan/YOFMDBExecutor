@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-yuchan, yusuke@junkpiano.me
+Yusuke Ohashi, yusuke@junkpiano.me
 
 ## License
 
